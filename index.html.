@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lussy</title>
+
+    <!-- Ikona a manifest -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="icon.png" />
+
+    <meta name="theme-color" content="#d00000" />
+  </head>
+  <body>
+    <h1>👋 Ahoj, tady Lussy!</h1>
+    <p>Toto je první testovací verze tvé osobní AI asistentky a digitálního diáře.</p>
+
+    <script>
+      // Registrace service workeru
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js');
+      }
+    </script>
+  </body>
+</html>
